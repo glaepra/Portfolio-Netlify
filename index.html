@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="fr">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://portfolio-victor-dorand.netlify.app/responsive.css">
@@ -540,22 +539,6 @@ document.body.appendChild(css);
 <script>
   AOS.init();
 </script>
-<script>
-	document.querySelector("form").addEventListener("submit", handleSubmit);
 
-const handleSubmit = (e) => {
-  e.preventDefault()
-  let myForm = document.getElementById('#formContact');
-  let formData = new FormData(myForm)
-  fetch('/', {
-    method: 'POST',
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString()
-  }).then(() => console.log('Form successfully submitted')).catch((error) =>
-    alert(error))
-}
-
-</script>
-<?php wp_footer(); ?>
 </body>
 </html>
