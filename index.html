@@ -536,6 +536,7 @@ document.addEventListener('scroll', function () {
 		document.querySelector('#PHPWP').classList.add('w80');
 		document.querySelector('#WD').classList.add('w78');
 		document.querySelector('#ADOBE').classList.add('w75');
+		activeCompteur();
 	}
 }, {
 	passive: true
@@ -573,7 +574,7 @@ x.addListener(myFunction) // Attach listen
 
 <script>
 	var cptr = 0;
-	function activeCompteur{
+	function activeCompteur(){
 		if (cptr == 0) {
 			$('.count').each(function() {
 			$(this).prop('counter', 0).animate({
