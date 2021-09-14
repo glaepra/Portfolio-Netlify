@@ -20,11 +20,9 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
+<body >
 	<header id="masthead" class="relative" >
 		<nav class="header" style="background:#000;">		
 			<div class="header_button" style="background: #FD8F00;">
@@ -419,28 +417,30 @@
 
 		</div>
 		<div class="mTop70 w90 mBot70">
+			<form name="contact" method="POST" data-netlify="true">
 			<div class="w100" style="white-space:nowrap;">
-				<span class="fSize25 fW700 inline-block">Hello je suis </span><input type="text" class="textInput w33"> <span class="fSize25 fW700 inline-block">de l'entreprise </span> <input type="text" class="textInput w32"><span lass="fSize25 fW700 inline-block">.</span>
+				<span class="fSize25 fW700 inline-block">Hello je suis </span><input type="text" name="name" placeholder="Nom" class="textInput w33"> <span class="fSize25 fW700 inline-block">de l'entreprise </span> <input type="text" name="entreprise" placeholder="Entreprise" class="textInput w32"><span lass="fSize25 fW700 inline-block">.</span>
 			</div>
 			<div class="mTop15 w100" style="white-space:nowrap;">
-				<span class="fSize25 fW700 inline-block ">Je te contacte car je suis intéresser par :</span><input type="text" class="textInput w55 "><span lass="fSize25 fW700 inline-block">.</span> 
+				<span class="fSize25 fW700 inline-block ">Je te contacte car je suis intéresser par :</span><input type="text" name="Prestation" placeholder="Prestation"  class="textInput w55 "><span lass="fSize25 fW700 inline-block">.</span> 
 			</div>
 			<div class="mTop15 w100" style="white-space:nowrap;">
-				<span class="fSize25 fW700 inline-block ">Tu peux me contactez vai téléphone au :</span><input type="text" class="textInput w55 "> 
+				<span class="fSize25 fW700 inline-block ">Tu peux me contactez vai téléphone au :</span><input type="text" name="phone" placeholder="Téléphone" class="textInput w55 "> 
 			</div>
 			
 			<div class="mTop15 w100" style="white-space:nowrap;">
-			<span class="fSize25 fW700 inline-block ">Oubien par mail à l'adresse :</span><input type="text" class="textInput w68"> <span lass="fSize25 fW700 inline-block">.</span><br>
+			<span class="fSize25 fW700 inline-block ">Oubien par mail à l'adresse :</span><input type="text" name="mail" placeholder="Mail" class="textInput w68"> <span lass="fSize25 fW700 inline-block">.</span><br>
 			</div>
 			<div class="mTop15 w100" style="white-space:nowrap;">
 			<span class="fSize25 fW700 inline-block ">Je voulais rajoutez que :</span> <br>
 			</div>
 			<div class="mTop15 w100" style="white-space:nowrap;">
-			<textarea class="textInput w100" style="height: 5em;"></textarea>
+			<textarea class="textInput w100" name="Message" placeholder="Message" style="height: 5em;"></textarea>
 			</div>
-			<div class="button mTop20 fSize20">
+			<button type="submite" class="button mTop20 fSize20">
 				Envoyer 
-			</div>
+			</button>
+		</form>
 	</div>
 </div>
 </main>
@@ -540,7 +540,21 @@ document.body.appendChild(css);
 <script>
   AOS.init();
 </script>
+<script>
+	document.querySelector("form").addEventListener("submit", handleSubmit);
 
+const handleSubmit = (e) => {
+  e.preventDefault()
+  let myForm = document.getElementById('pizzaOrder');
+  let formData = new FormData(myForm)
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => console.log('Form successfully submitted')).catch((error) =>
+    alert(error))
+}
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>
