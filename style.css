@@ -21,6 +21,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+html{
+	scroll-behavior: smooth;
+}
 h1, h2, h3, h4, h5, p{
 	margin: 0;
 }
