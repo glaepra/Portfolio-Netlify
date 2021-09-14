@@ -547,14 +547,13 @@ function isInViewport(el) {
 
 
 const box = document.querySelector('#mydivID');
-const message = document.querySelector('#message');
 
 document.addEventListener('scroll', function () {
     const messageText = isInViewport(box) ?
-        console.log('ok') :
-        console.log('not ok');
+        'ok' :
+        'not ok';
 
-    message.textContent = messageText;
+    console.log(messageText);
 
 }, {
     passive: true
