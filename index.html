@@ -528,7 +528,29 @@ document.body.appendChild(css);
 
 
 <script>
-		new Splide( '.splide', {
+/*		new Splide( '.splide', {
+			type   : 'loop',
+	perPage: 2,
+	rewind : true,
+	padding: {
+		right: '10rem',
+		left : '0rem',
+	},
+	perMove: 1,
+
+} ).mount();*/
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    		new Splide( '.splide', {
+			type   : 'loop',
+	perPage: 1,
+	rewind : true,
+	perMove: 1,
+
+} ).mount();
+  } else {
+   		new Splide( '.splide', {
 			type   : 'loop',
 	perPage: 2,
 	rewind : true,
@@ -539,7 +561,12 @@ document.body.appendChild(css);
 	perMove: 1,
 
 } ).mount();
+  }
+}
 
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listen
 </script>
 
 <script>
