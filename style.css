@@ -259,7 +259,7 @@ body{
 	margin: 30px 0px;
 }
 .nowrapRight{
-	white-space:none;
+	white-space:initial;
 }
 
 }
