@@ -231,3 +231,24 @@ body{
 	width: 650px;
 
 }
+
+
+
+
+@media(max-width:767px){
+	.cercle_back_moi{
+		bottom: -150px;
+		right: -150px;
+		height: 800px;
+		width: 800px;
+		border-radius: 100%;
+		background-color: #141414;
+		z-index: 1;
+	}
+	.moiAccuiel{
+		z-index: 2;
+		right: 0;
+		bottom: 0;
+		width: 650px;
+	}
+}
