@@ -417,7 +417,7 @@
 
 		</div>
 		<div class="mTop70 w90 mBot70">
-			<form name="contact" method="POST" data-netlify="true">
+			<form id="formContact" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" >
 			<div class="w100" style="white-space:nowrap;">
 				<span class="fSize25 fW700 inline-block">Hello je suis </span><input type="text" name="name" placeholder="Nom" class="textInput w33"> <span class="fSize25 fW700 inline-block">de l'entreprise </span> <input type="text" name="entreprise" placeholder="Entreprise" class="textInput w32"><span lass="fSize25 fW700 inline-block">.</span>
 			</div>
@@ -545,7 +545,7 @@ document.body.appendChild(css);
 
 const handleSubmit = (e) => {
   e.preventDefault()
-  let myForm = document.getElementById('pizzaOrder');
+  let myForm = document.getElementById('formContact');
   let formData = new FormData(myForm)
   fetch('/', {
     method: 'POST',
