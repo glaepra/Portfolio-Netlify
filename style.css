@@ -31,7 +31,7 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+	outline: none;
 }
 body{
 	font-family: 'Poppins', sans-serif;
@@ -253,16 +253,19 @@ body{
 		width: 350px;
 	}
 	.borderExperience{
-	background: #FFF;  
-	height: 1px;
-	width: 100%;
-	margin: 30px 0px;
-}
-.nowrapRight{
-	white-space:initial;
-}
-.textInput{
-	font-size: 16px;
-}
-
+		background: #FFF;  
+		height: 1px;
+		width: 100%;
+		margin: 30px 0px;
+	}
+	.nowrapRight{
+		white-space:initial;
+	}
+	.textInput{
+		font-size: 16px;
+	}
+	.boxPorfolio{
+		width: 300px;
+		height: 150px;
+	}
 }
