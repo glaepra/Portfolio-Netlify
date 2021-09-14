@@ -231,7 +231,9 @@ body{
 	width: 650px;
 
 }
-
+.borderExperience{
+	background: #FFF;  width: 1px;
+}
 
 
 
@@ -248,4 +250,10 @@ body{
 		bottom: 0;
 		width: 350px;
 	}
+	.borderExperience{
+	background: #FFF;  
+	height: 1px;
+	width: 100%;
+}
+
 }
