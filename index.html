@@ -532,12 +532,7 @@ document.body.appendChild(css);
 
 <script>
 // Where el is the DOM element you'd like to test for visibility
-$(function () {
-    // Handler for .ready() called.
-    if ($("#mydivID").is(":visible")) {
-        alert('Element is visible');
-    }
-});
+
 
 function isInViewport(el) {
     const rect = el.getBoundingClientRect();
