@@ -536,17 +536,6 @@ document.addEventListener('scroll', function () {
 		document.querySelector('#PHPWP').classList.add('w80');
 		document.querySelector('#WD').classList.add('w78');
 		document.querySelector('#ADOBE').classList.add('w75');
-		$('.count').each(function() {
-			$(this).prop('counter', 0).animate({
-				counter: $(this).text()
-			}, {
-				duration: 2000,
-				easing: 'swing',
-				step: function(now) {
-					$(this).text(Math.ceil(now));
-				}
-			});
-		});
 	}
 }, {
 	passive: true
@@ -578,6 +567,28 @@ x.addListener(myFunction) // Attach listen
 </script>
 <script>
 	AOS.init();
+</script>
+
+
+
+<script>
+	var cptr = 0;
+	function activeCompteur{
+		if (cptr == 0) {
+			$('.count').each(function() {
+			$(this).prop('counter', 0).animate({
+				counter: $(this).text()
+			}, {
+				duration: 2000,
+				easing: 'swing',
+				step: function(now) {
+					$(this).text(Math.ceil(now));
+				}
+			});
+		});
+			cptr = 1;
+		}
+	}
 </script>
 </body>
 </html>
