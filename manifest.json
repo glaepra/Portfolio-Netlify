@@ -10,13 +10,13 @@
   "icons": [
     {
       "src": "media/Bienvenue-sur-le-portfolio-de-victor-Dorand/Bienvenue-sur-le-portfolio-de-victor-Dorand_mlkr2w_c_scale,w_200",
-      "sizes": "200x200",
+      "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
       "src": "media/Bienvenue-sur-le-portfolio-de-victor-Dorand/Bienvenue-sur-le-portfolio-de-victor-Dorand_mlkr2w_c_scale,w_361",
-      "sizes": "360x360",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     },
