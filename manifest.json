@@ -1,0 +1,23 @@
+{
+  "name": "Victor DORAND",
+  "short_name": "Victor",
+  "theme_color": "#FD8F00",
+  "background_color": "#000000",
+  "description": "Portfolio",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/?utm_source=launcher",
+  "icons": [
+    {
+      "src": "media/Bienvenue-sur-le-portfolio-de-victor-Dorand/Bienvenue-sur-le-portfolio-de-victor-Dorand_mlkr2w_c_scale,w_200",
+      "sizes": "200x200",
+      "type": "image/png"
+    },
+    {
+      "src": "media/Bienvenue-sur-le-portfolio-de-victor-Dorand/Bienvenue-sur-le-portfolio-de-victor-Dorand_mlkr2w_c_scale,w_361",
+      "sizes": "360x360",
+      "type": "image/png"
+    },
+  ],
+  "splash_pages": null
+}

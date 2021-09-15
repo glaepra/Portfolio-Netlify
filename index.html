@@ -594,6 +594,11 @@ x.addListener(myFunction) // Attach listen
 			cptr = 1;
 		}
 	}
+	
+	if('serviceWorker' in navigator){
+				navigator.serviceWorker.register('sw.js');
+			}
+
 </script>
 <script type="application/ld+json">
 {
