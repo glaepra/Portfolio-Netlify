@@ -617,6 +617,7 @@ document.addEventListener('scroll', function () {
 	'oui' :
 	'non';
 	if (messageText=='oui') {
+		console.log('bonjour');
 		document.querySelector('#HTMLCSS').classList.add('w90');
 		document.querySelector('#PHPWP').classList.add('w80');
 		document.querySelector('#WD').classList.add('w78');
@@ -658,6 +659,8 @@ x.addListener(myFunction) // Attach listen
 	var cptr = 0;
 
 	function activeCompteur(){
+		console.log('yes');
+
 		//#region - start of - number counter animation
 const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
  const target = document.querySelector(qSelector);
