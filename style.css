@@ -246,9 +246,11 @@ body{
 
 }
 }
-.splide__arrow{
-		top: 120px !important;
+
+	.splide__arrow{
+		top: 120% !important;
 		fill: #FD8F00;
+		background: transparent;
 	}
 	.splide__arrow--prev{
 		left: 80% !important;
