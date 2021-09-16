@@ -6,8 +6,19 @@
   "description": "Portfolio Victor Dorand",
   "display": "standalone",
   "Scope": "/",
-  "start_url": ".",
-  
-  
+  "start_url": "https://victordorand.com/",
+  "icons": [
+    {
+      "src": "https://victordorand.com//media/Bienvenue-sur-le-portfolio-de-victor-Dorand/icone_web_app_192x192.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://victordorand.com//media/Bienvenue-sur-le-portfolio-de-victor-Dorand/icone_web_app_512x512.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+  ],
+
   "splash_pages": null
 }
