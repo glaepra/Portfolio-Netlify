@@ -246,9 +246,27 @@ body{
 
 }
 }
-
+.splide__arrow{
+		top: 120px;
+		fill: #FD8F00;
+	}
+	.splide__arrow--prev{
+		left: 80%;
+	}
+	.splide__arrow--next{
+		right: 5%;
+	}
+	.splide__pagination{
+		display: none;
+	}
 
 @media(max-width:767px){
+	.splide__arrow--prev{
+		left: 60%;
+	}
+	.splide__arrow{
+		top: 120px;
+	}
 	.cercle_back_moi{
 		bottom: -50px;
 		right: -50px;
