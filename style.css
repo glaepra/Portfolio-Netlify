@@ -250,7 +250,7 @@ body{
 	.splide__arrow{
 		top: 120% !important;
 		fill: #FD8F00;
-		background: transparent;
+		background: transparent !important;
 	}
 	.splide__arrow--prev{
 		left: 80% !important;
