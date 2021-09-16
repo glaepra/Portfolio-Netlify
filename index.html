@@ -356,7 +356,7 @@
 					<div class="mTop15 flex aligncenter w100 wm95">
 						<span class="fSize30 fW700 fmSize25 wm20"><span class="count">90</span> %</span>
 						<div class="relative barprogretion mLeft30 bbox">
-							<div id="HTMLCSS" class="absolute w1 h100" style="background:  #FD8F00; transition: 2s;">
+							<div id="HTMLCSS" class="absolute w1 h100 wm90" style="background:  #FD8F00; transition: 2s;">
 							</div>
 						</div>
 					</div>
@@ -365,7 +365,7 @@
 					<div class="mTop15 flex aligncenter w100 wm95">
 						<span class="fSize30 fW700 fmSize25 wm20"><span class="count">80</span> %</span>
 						<div class="relative barprogretion mLeft30 bbox">
-							<div id="PHPWP" class="absolute w1 h100" style="background:  #FD8F00; transition: 2s;">
+							<div id="PHPWP" class="absolute w1 h100 wm80" style="background:  #FD8F00; transition: 2s;">
 							</div>
 						</div>
 					</div>
@@ -374,7 +374,7 @@
 					<div class="mTop15 flex aligncenter w100 wm95">
 						<span class="fSize30 fW700 fmSize25 wm20"><span class="count">78</span> %</span>
 						<div class="relative barprogretion mLeft30 bbox">
-							<div id="WD" class="absolute w1 h100" style="background:  #FD8F00; transition: 2s;">
+							<div id="WD" class="absolute w1 h100 wm78" style="background:  #FD8F00; transition: 2s;">
 							</div>
 						</div>
 					</div>
@@ -383,7 +383,7 @@
 					<div class="mTop15 flex aligncenter w100 wm95">
 						<span class="fSize30 fW700 fmSize25 wm20"><span class="count">75</span> %</span>
 						<div class="relative barprogretion mLeft30 bbox">
-							<div id="ADOBE" class="absolute w1 h100" style="background:  #FD8F00; transition: 2s;">
+							<div id="ADOBE" class="absolute w1 h100 wm75" style="background:  #FD8F00; transition: 2s;">
 							</div>
 						</div>
 					</div>
@@ -617,7 +617,6 @@ document.addEventListener('scroll', function () {
 	'oui' :
 	'non';
 	if (messageText=='oui') {
-		console.log('yes');
 		document.querySelector('#HTMLCSS').classList.add('w90');
 		document.querySelector('#PHPWP').classList.add('w80');
 		document.querySelector('#WD').classList.add('w78');
@@ -657,6 +656,7 @@ x.addListener(myFunction) // Attach listen
 </script>
 <script>
 	var cptr = 0;
+
 	function activeCompteur(){
 		if (cptr == 0) {
 			$('.count').each(function() {
