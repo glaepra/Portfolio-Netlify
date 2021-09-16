@@ -259,7 +259,7 @@ body{
 		right: 5% !important;
 	}
 	.splide__pagination{
-		display: none;
+		display: none !important;
 	}
 
 @media(max-width:767px){
