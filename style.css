@@ -247,14 +247,14 @@ body{
 }
 }
 .splide__arrow{
-		top: 120px;
+		top: 120px !important;
 		fill: #FD8F00;
 	}
 	.splide__arrow--prev{
-		left: 80%;
+		left: 80% !important;
 	}
 	.splide__arrow--next{
-		right: 5%;
+		right: 5% !important;
 	}
 	.splide__pagination{
 		display: none;
@@ -262,10 +262,10 @@ body{
 
 @media(max-width:767px){
 	.splide__arrow--prev{
-		left: 60%;
+		left: 60% !important;
 	}
 	.splide__arrow{
-		top: 120px;
+		top: 120px !important;
 	}
 	.cercle_back_moi{
 		bottom: -50px;
