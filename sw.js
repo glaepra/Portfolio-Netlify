@@ -2,7 +2,7 @@
 	Pour mieux comprendre ce script, voir : https://css-tricks.com/serviceworker-for-offline/
 *******************/
 
-var version = 'v1:0:2';
+var version = 'v1:0:3';
 
 self.addEventListener("install", function(event) {
 	self.skipWaiting();
@@ -10,7 +10,6 @@ self.addEventListener("install", function(event) {
 	caches.open(version + 'fundamentals')
       .then(function(cache) {
         return cache.addAll([
-        	'.',
           '/',
           'https://victordorand.com/index.html',
           'https://victordorand.com/manifest.json'
