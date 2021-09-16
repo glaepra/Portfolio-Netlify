@@ -9,12 +9,12 @@
   "start_url": ".",
   "icons": [
     {
-      "src": "https://victordorand.com/media/icone_web_app_192x192.png",
+      "src": "/media/icone_web_app_192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://victordorand.com/media/icone_web_app_512x512.png",
+      "src": "/media/icone_web_app_512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
