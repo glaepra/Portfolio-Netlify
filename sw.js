@@ -11,8 +11,8 @@ self.addEventListener("install", function(event) {
       .then(function(cache) {
         return cache.addAll([
           '/',
-          'https://portfolio-victor-dorand.netlify.app/index.html',
-          'https://portfolio-victor-dorand.netlify.app/manifest.json'
+          'https://victordorand.com/index.html',
+          'https://victordorand.com/manifest.json'
         ]);
       })
 	);
