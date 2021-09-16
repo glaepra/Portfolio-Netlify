@@ -354,7 +354,7 @@
 				<div class="w70 flex justicenter column wm100 mmTop30">
 					<span class="fSize20 fW300 block colorGris  mLeft100">HTML & CSS</span>
 					<div class="mTop15 flex aligncenter w100 wm95">
-						<span class="fSize30 fW700 fmSize25 wm20"><span class="count" id="count1"></span> %</span>
+						<span class="fSize30 fW700 fmSize25 wm20"><span class="count">90</span> %</span>
 						<div class="relative barprogretion mLeft30 bbox">
 							<div id="HTMLCSS" class="absolute w1 h100 wm90" style="background:  #FD8F00; transition: 2s;">
 							</div>
@@ -363,7 +363,7 @@
 					<!------------------------------->
 					<span class="fSize20 fW300 block colorGris mTop30 mLeft100">PHP & Wordpress</span>
 					<div class="mTop15 flex aligncenter w100 wm95">
-						<span class="fSize30 fW700 fmSize25 wm20"><span class="count" id="count2"></span> %</span>
+						<span class="fSize30 fW700 fmSize25 wm20"><span class="count">80</span> %</span>
 						<div class="relative barprogretion mLeft30 bbox">
 							<div id="PHPWP" class="absolute w1 h100 wm80" style="background:  #FD8F00; transition: 2s;">
 							</div>
@@ -372,7 +372,7 @@
 					<!------------------------------->
 					<span class="fSize20 fW300 block colorGris mTop30 mLeft100">Web Design</span>
 					<div class="mTop15 flex aligncenter w100 wm95">
-						<span class="fSize30 fW700 fmSize25 wm20"><span class="count" id="count3"></span> %</span>
+						<span class="fSize30 fW700 fmSize25 wm20"><span class="count">78</span> %</span>
 						<div class="relative barprogretion mLeft30 bbox">
 							<div id="WD" class="absolute w1 h100 wm78" style="background:  #FD8F00; transition: 2s;">
 							</div>
@@ -381,7 +381,7 @@
 					<!------------------------------->
 					<span class="fSize20 fW300 block colorGris mTop30 mLeft100">Adobe Suite</span>
 					<div class="mTop15 flex aligncenter w100 wm95">
-						<span class="fSize30 fW700 fmSize25 wm20"><span class="count" id="count4"></span> %</span>
+						<span class="fSize30 fW700 fmSize25 wm20"><span class="count">75</span> %</span>
 						<div class="relative barprogretion mLeft30 bbox">
 							<div id="ADOBE" class="absolute w1 h100 wm75" style="background:  #FD8F00; transition: 2s;">
 							</div>
@@ -617,7 +617,6 @@ document.addEventListener('scroll', function () {
 	'oui' :
 	'non';
 	if (messageText=='oui') {
-		console.log('bonjour');
 		document.querySelector('#HTMLCSS').classList.add('w90');
 		document.querySelector('#PHPWP').classList.add('w80');
 		document.querySelector('#WD').classList.add('w78');
@@ -656,34 +655,6 @@ x.addListener(myFunction) // Attach listen
 	AOS.init();
 </script>
 <script>
-	var cptr = 0;
-
-	function activeCompteur(){
-		console.log('yes');
-
-		//#region - start of - number counter animation
-const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
- const target = document.querySelector(qSelector);
- let startTimestamp = null;
- const step = (timestamp) => {
-  if (!startTimestamp) startTimestamp = timestamp;
-  const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-  target.innerText = Math.floor(progress * (end - start) + start);
-  if (progress < 1) {
-   window.requestAnimationFrame(step);
-  }
- };
- window.requestAnimationFrame(step);
-};
-//#endregion - end of - number counter animation
-
-document.addEventListener("DOMContentLoaded", () => {
- counterAnim("#count1", 0, 90, 2000);
- counterAnim("#count2", 0, 80, 2000);
- counterAnim("#count3", 0, 78, 2000);
- counterAnim("#count4", 0, 75, 200);
-});
-	}
 
 	if('serviceWorker' in navigator){
 		navigator.serviceWorker.register('./sw.js');
