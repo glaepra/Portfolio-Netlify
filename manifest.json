@@ -6,7 +6,7 @@
   "description": "Portfolio Victor Dorand",
   "display": "standalone",
   "Scope": "/",
-  "start_url": "/?utm_source=launcher",
+  "start_url": ".",
   "icons": [
     {
       "src": "media/Bienvenue-sur-le-portfolio-de-victor-Dorand/Bienvenue-sur-le-portfolio-de-victor-Dorand_mlkr2w_c_scale,w_200",
