@@ -149,6 +149,9 @@ body{
 .heightBoxMoi:hover .BoxHoverMoi{
 	transform: scale(10);
 }
+.heightBoxMoi:hover .pConp{
+	color: white;
+}
 .boxExperiense{
 	background-color: #141414;
 	border-radius: 15px;
