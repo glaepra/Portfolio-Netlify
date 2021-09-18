@@ -13,6 +13,8 @@ self.addEventListener("install", function(event) {
           '/',
           'https://victordorand.com/index.html',
           'https://victordorand.com/manifest.json'
+          'https://victordorand.com/style.css'
+          'https://victordorand.com/responsive.css'
         ]);
       })
 	);
