@@ -252,6 +252,11 @@ body{
 
 }
 }
+.animationSVG{
+	position: fixed; 
+	height: 100vh; 
+	z-index: -1;
+}
 
 	.splide__arrow{
 		top: 120% !important;
