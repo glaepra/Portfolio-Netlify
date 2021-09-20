@@ -235,12 +235,17 @@ body{
 		width: 650px;
 	}
 }
+
+
+
+
+
 .animationSVG{
 	position: fixed;
 	height: 100vh;
 	z-index: -1;
 	transform: scale(0);
-	transition: 1s;
+	transition: 2s;
 }
 .activeanimationSVG{
 	z-index: 30;
@@ -252,7 +257,7 @@ body{
 	z-index: -1;
 	opacity: 0;
 	background: #FD8F00;
-	transition-delay: 1.2s;
+	transition-delay: 2s;
 }
 .activeinformationAnimationSVG{
 	opacity: 1;
