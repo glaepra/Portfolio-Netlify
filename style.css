@@ -270,6 +270,7 @@ body{
 	opacity: 0;
 	background: #FD8F00;
 	transition-delay: 1s;
+	transition: 0.3s;
 }
 .activeinformationAnimationSVG{
 	opacity: 1;
