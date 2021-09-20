@@ -105,6 +105,14 @@ body{
 	top: 50%;
 	animation: float 3s linear infinite alternate;
 }
+.animationActiveInformation{
+	transform: translateY(-10px);
+	transition: 0.3s;
+}
+.informationAnimationSVG .animationActiveInformation{
+	transform: translateY(-10px);
+	transition: 0.3s;
+}
 
 @keyframes float {
 	0% {
