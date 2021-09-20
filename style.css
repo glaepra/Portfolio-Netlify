@@ -269,8 +269,7 @@ body{
 	z-index: -1;
 	opacity: 0;
 	background: #FD8F00;
-	transition: 0.3s;
-	transition-delay: 1s;
+	transition-delay: 1.2s;
 }
 .activeinformationAnimationSVG{
 	opacity: 1;
