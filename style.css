@@ -11,13 +11,10 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: portfolio
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
-
 Portfolio is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
@@ -53,7 +50,6 @@ body{
 	align-items: center;
 	justify-content: center;
 	border-bottom: 1px solid white;
-
 }
 .header_button>svg{
 	fill: #FFF;
@@ -76,7 +72,6 @@ body{
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-
 }
 .lhp{
 	line-height: 1.5em;
@@ -91,7 +86,6 @@ body{
 	position: relative;
 	z-index: 2;
 }
-
 .titre>div{
 	z-index: 1;
 	position: absolute;
@@ -105,26 +99,14 @@ body{
 	top: 50%;
 	animation: float 3s linear infinite alternate;
 }
-.animationActiveInformation{
-	transform: translateY(-10px);
-	transition: 0.3s;
-}
-.informationAnimationSVG .animationActiveInformation{
-	transform: translateY(0px);
-
-}
-
 @keyframes float {
 	0% {
 		transform: translate(-50%,-55%);
-
 	}
 	100% {
 		transform: translate(-50%,-45%);
 	}
 }
-
-
 .parentPhoto{
 	width: 280px;
 	height: 280px;
@@ -168,7 +150,6 @@ body{
 	border-radius: 15px;
 	padding: 30px;
 	display: flex;
-
 }
 .infoExp{
 	width: max-content;
@@ -187,8 +168,7 @@ body{
 	height: 250px;
 	overflow: hidden;
 	border-radius: 15px;
-}	
-
+}
 .boxTitrePortfolio{
 	position: absolute;
 	top: 0;
@@ -239,7 +219,6 @@ body{
 	right: 0;
 	bottom: 0;
 	width: 850px;
-
 }
 .borderExperience{
 	background: #FFF;  width: 1px;
@@ -249,20 +228,16 @@ body{
 }
 @media(max-width:1780px){
 	.cercle_back_moi{
-
-	height: 800px;
-	width: 800px;
-
-}
+		height: 800px;
+		width: 800px;
+	}
 	.moiAccuiel{
-
-	width: 650px;
-
-}
+		width: 650px;
+	}
 }
 .animationSVG{
-	position: fixed; 
-	height: 100vh; 
+	position: fixed;
+	height: 100vh;
 	z-index: -1;
 	transform: scale(0);
 	transition: 1s;
@@ -272,8 +247,8 @@ body{
 	transform: scale(1.5);
 }
 .informationAnimationSVG{
-	position: fixed; 
-	height: 100vh; 
+	position: fixed;
+	height: 100vh;
 	z-index: -1;
 	opacity: 0;
 	background: #FD8F00;
@@ -281,23 +256,37 @@ body{
 }
 .activeinformationAnimationSVG{
 	opacity: 1;
-		z-index: 30;
+	z-index: 30;
+}
+.animationActiveInformation{
+	transform: translateY(-10px);
+	transition: 0.3s;
+}
+.activeinformationAnimationSVG .animationActiveInformation{
+	transform: translateY(0px);
 }
 
-	.splide__arrow{
-		top: 120% !important;
-		fill: #FD8F00;
-		background: transparent !important;
-	}
-	.splide__arrow--prev{
-		left: 80% !important;
-	}
-	.splide__arrow--next{
-		right: 5% !important;
-	}
-	.splide__pagination{
-		display: none !important;
-	}
+
+
+
+.splide__arrow{
+	top: 120% !important;
+	fill: #FD8F00;
+	background: transparent !important;
+}
+.splide__arrow--prev{
+	left: 80% !important;
+}
+.splide__arrow--next{
+	right: 5% !important;
+}
+.splide__pagination{
+	display: none !important;
+}
+
+
+
+
 
 @media(max-width:767px){
 	.splide__arrow--prev{
@@ -319,7 +308,7 @@ body{
 		width: 350px;
 	}
 	.borderExperience{
-		background: #FFF;  
+		background: #FFF;
 		height: 1px;
 		width: 100%;
 		margin: 30px 0px;
@@ -332,7 +321,6 @@ body{
 		border-radius: 0px;
 		width: 90% !important;
 		margin: 0px 0px;
-
 	}
 	.boxPorfolio{
 		width: 300px;
