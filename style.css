@@ -256,6 +256,12 @@ body{
 	position: fixed; 
 	height: 100vh; 
 	z-index: -1;
+	transform: scale(0);
+	transition: 1s;
+}
+.activeanimationSVG{
+	z-index: 30;
+	transform: scale(1.5);
 }
 
 	.splide__arrow{
