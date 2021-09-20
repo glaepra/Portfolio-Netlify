@@ -260,7 +260,7 @@ body{
 }
 .animationActiveInformation{
 	transform: translateY(-10px);
-	transition: 0.3s;
+	transition: 1s;
 	opacity: 0;
 }
 .activeinformationAnimationSVG .animationActiveInformation{
