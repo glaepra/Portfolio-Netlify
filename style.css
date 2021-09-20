@@ -110,8 +110,8 @@ body{
 	transition: 0.3s;
 }
 .informationAnimationSVG .animationActiveInformation{
-	transform: translateY(-10px);
-	transition: 0.3s;
+	transform: translateY(0px);
+
 }
 
 @keyframes float {
