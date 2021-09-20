@@ -263,6 +263,17 @@ body{
 	z-index: 30;
 	transform: scale(1.5);
 }
+.informationAnimationSVG{
+	position: fixed; 
+	height: 100vh; 
+	z-index: -1;
+	opacity: 0;
+	background: #FD8F00;
+	transition-delay: 1s;
+}
+.activeinformationAnimationSVG{
+	opacity: 1;
+}
 
 	.splide__arrow{
 		top: 120% !important;
