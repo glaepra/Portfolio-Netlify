@@ -84,16 +84,16 @@
 					<div class="informationAnimationSVG flex space-between">
 						<div class="w45 flex column mLeft50 h100 mTop50">
 						<svg style="transition-delay: 2s;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" id="footer-sample-full" width="50px" height="50px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" class="iconify iconify--ph animationActiveInformation "><path d="M204.243 195.757a6 6 0 0 1-8.486 8.486L128 136.485l-67.757 67.758a6 6 0 0 1-8.486-8.486L119.515 128L51.757 60.243a6 6 0 0 1 8.486-8.486L128 119.515l67.757-67.758a6 6 0 0 1 8.486 8.486L136.485 128z" fill="#FFFFFF"></path></svg>
-						<h2 style="transition-delay: 2.2s;" class=" animationActiveInformation fSize35 mTop80">Création Site Innov-Event</h2>
-						<p style="transition-delay: 2.4s;" class=" animationActiveInformation fSize17 mTop50 lhp">
+						<h2 id="TitreAnime" style="transition-delay: 2.2s;" class=" animationActiveInformation fSize35 mTop80">Création Site Innov-Event</h2>
+						<p id="infoAnime" style="transition-delay: 2.4s;" class=" animationActiveInformation fSize17 mTop50 lhp">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias ipsam, ad placeat culpa neque voluptates natus est sed nulla dolorem minima fugiat vel mollitia praesentium harum ducimus. Asperiores, modi?</p>
-						<p style="transition-delay: 2.6s;" class=" animationActiveInformation fSize17 mTop30 lhp">
+						<p id="infoAnime2" style="transition-delay: 2.6s;" class=" animationActiveInformation fSize17 mTop30 lhp">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum delectus atque beatae nam ad nisi neque unde quidem veniam repellat quaerat, sed sapiente facere error corporis et. Eos, incidunt, dolore.
 						</p>
-						<div style="transition-delay: 2.8s;" class=" animationActiveInformation button mTop50 wMax fSize">
+						<a id="lienAnim" style="transition-delay: 2.8s;" class=" animationActiveInformation button mTop50 wMax fSize">
 							Découvrir
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" id="footer-sample-full" width="25px" height="25px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" class="iconify iconify--ph mLeft20"><path d="M101.648 187.099c-5.454 16.36-18.45 28.379-37.586 34.757a92.736 92.736 0 0 1-26.572 4.654a8 8 0 0 1-8-8a92.733 92.733 0 0 1 4.654-26.572c6.378-19.136 18.397-32.133 34.757-37.586a8 8 0 1 1 5.06 15.179c-19.657 6.552-25.746 27.89-27.629 40.138c12.242-1.883 33.584-7.971 40.137-27.63a8 8 0 1 1 15.18 5.06zm99.891-76.07L192.57 120v61.255a15.896 15.896 0 0 1-4.686 11.313L155.54 224.91a16 16 0 0 1-27.004-8.176L120.63 177.2L78.8 135.37l-39.534-7.907a16 16 0 0 1-8.177-27.002L63.43 68.118a15.901 15.901 0 0 1 11.314-4.686H136l8.97-8.971c28.589-28.586 57.923-27.757 69.21-26.073a15.879 15.879 0 0 1 13.433 13.432c1.685 11.286 2.515 40.621-26.073 69.21zm-159.136.744l37.712 7.542L120 79.432H74.745zM94.06 128L128 161.941l62.225-62.225c7.81-7.81 25.544-28.854 21.563-55.533c-26.66-3.953-47.695 13.783-55.504 21.592zm82.51 8l-39.885 39.885l7.543 37.712l32.341-32.342z" fill="#FD8F00"></path></svg>
-					</div>
+					</a>
 				</div>
 				<div class="w50">
 					
@@ -663,10 +663,25 @@ if (x.matches) { // If media query matches
 var x = window.matchMedia("(max-width: 700px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listen
-function activeAnimation(){
+
+function activeAnimation(arg){
 	document.querySelector(".animationSVG").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.47 298.81" class="animationaparitions"><path class="FinAnimationSVH" style="stroke:#FD8F00;stroke-miterlimit:10; fill: #FD8F00;" d=""><animate id="animation-to-check" attributeName="d" dur="2.3s"  values="M.93,107c0-45-11.46-81.22,84-87,96.39-5.83,126.57-22.56,160-19,54.54,5.83,148.39,29.19,151.39,73.19S382.13,125,367.93,132c-71.86,35.19-44-6.05-92,18-81.29,40.74-26,0-96,12-89.29-4.65-23,43.55-96,33C20,185.76.93,107,.93,107Z;M21.77,133.2c27-89.72,36.55-125.27,132-131,96.39-5.84,196.58,5.43,230,9,54.55,5.82,10,24,13,68s-19.8,65-34,71.94c-71.86,35.19-49,0-97,24.06-81.29,40.73-51,65-121,77-89.28-4.65-40-42.46-113-53C-32.19,189.91,21.77,133.2,21.77,133.2Z;M9.46,159.69c0-45-41.46-152.1,54-157.88,96.39-5.83,261.57,9.44,295,13,54.54,5.83,155,17,158,61s2.1,97.23,1,113c-4,57,22,85.95-26,110-81.29,40.74-87,4.8-157,16.8-89.29-4.65-201-22.25-274-32.8C-3.5,273.58,9.46,159.69,9.46,159.69Z;"/></path></svg>';
 	document.querySelector(".animationSVG").classList.add('activeanimationSVG');
 	document.querySelector(".informationAnimationSVG").classList.add('activeinformationAnimationSVG');
+
+
+	var titre = document.querySelector("#TitreAnime");
+	var info = document.querySelector("#infoAnime");
+	var infoB = document.querySelector("#infoAnime2");
+	var lien = document.querySelector("#lienAnim");
+
+	if (arg=="0") {
+		titre.innerHTML = "Bonjour le monde";
+		info.innerHTML = "oui";
+		infoB.innerHTML = "non";
+		lien.href="google.com"
+
+	}
 }
 </script>
 <script>
