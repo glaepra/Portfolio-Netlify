@@ -12,8 +12,8 @@ self.addEventListener("install", function(event) {
         return cache.addAll([
           '/',
           'https://victordorand.com/index.html',
-          'https://victordorand.com/manifest.json'
-          'https://victordorand.com/style.css'
+          'https://victordorand.com/manifest.json',
+          'https://victordorand.com/style.css',
           'https://victordorand.com/responsive.css'
         ]);
       })
