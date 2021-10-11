@@ -292,7 +292,9 @@ body{
 	display: none !important;
 }
 
-
+.splide__arrow svg{
+	fill: #FD8F00;
+}
 
 
 
