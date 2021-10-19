@@ -273,6 +273,10 @@ body{
 	opacity: 1;
 
 }
+.activeinformationAnimationSVGFin{
+	transform: translateY(-10px);
+	opacity: 0;
+}
 
 
 
