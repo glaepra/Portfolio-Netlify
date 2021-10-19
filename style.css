@@ -274,8 +274,8 @@ body{
 
 }
 .activeinformationAnimationSVGFin{
-	transform: translateY(-10px);
-	opacity: 0;
+	transform: translateY(-10px) !!important;
+	opacity: 0 !!important;
 }
 
 
