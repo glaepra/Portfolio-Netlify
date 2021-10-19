@@ -527,14 +527,14 @@
 											src="https://victordorand.com/media/projet-agence-influenceur.webp"
 											alt="Agence influenceur nouvelle fonctionnaliter de mise en relation entre marque et influenceur"
 											class="w100 h100 obj-f">
-										<a href="https://agence-influenceur.fr/" class="boxPlusPortfolio">
+										<div onclick="activeAnimation(1);" class="boxPlusPortfolio">
 											<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39"
 												viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="1.5"
 												stroke-linecap="butt" stroke-linejoin="round">
 												<line x1="12" y1="5" x2="12" y2="19"></line>
 												<line x1="5" y1="12" x2="19" y2="12"></line>
 											</svg>
-										</a>
+										</div>
 									</div>
 								</li>
 								<li class="splide__slide">
@@ -545,14 +545,14 @@
 										<img loading="lazy" src="https://victordorand.com/media/projet-nimea_jardin.webp"
 											alt="site vitrine Niméa jardin créer pour l'entreprise du même nom"
 											class="w100 h100 obj-f">
-										<a href="https://nimea-jardins.fr/accueil/" class="boxPlusPortfolio">
+										<div onclick="activeAnimation(2);" class="boxPlusPortfolio">
 											<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39"
 												viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="1.5"
 												stroke-linecap="butt" stroke-linejoin="round">
 												<line x1="12" y1="5" x2="12" y2="19"></line>
 												<line x1="5" y1="12" x2="19" y2="12"></line>
 											</svg>
-										</a>
+										</div>
 									</div>
 								</li>
 								<li class="splide__slide">
@@ -564,14 +564,14 @@
 											src="https://victordorand.com/media/travail-Developpement-Fihms.webp"
 											alt="projet Fihms site vitrene d'un vendeur de fenettre et de porte de garage"
 											class="w100 h100 obj-f">
-										<a href="https://fihms68.fr/" class="boxPlusPortfolio">
+										<div onclick="activeAnimation(3);" class="boxPlusPortfolio">
 											<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39"
 												viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="1.5"
 												stroke-linecap="butt" stroke-linejoin="round">
 												<line x1="12" y1="5" x2="12" y2="19"></line>
 												<line x1="5" y1="12" x2="19" y2="12"></line>
 											</svg>
-										</a>
+										</div>
 									</div>
 								</li>
 								<li class="splide__slide">
@@ -583,14 +583,14 @@
 											src="https://victordorand.com/media/mon-stand-ephemer-projet.webp"
 											alt="Projet mon stand ephemere Créé en Janvier 2020"
 											class="w100 h100 obj-f">
-										<a href="https://monstandephemere.fr/" class="boxPlusPortfolio">
+										<div onclick="activeAnimation(4);" class="boxPlusPortfolio">
 											<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39"
 												viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="1.5"
 												stroke-linecap="butt" stroke-linejoin="round">
 												<line x1="12" y1="5" x2="12" y2="19"></line>
 												<line x1="5" y1="12" x2="19" y2="12"></line>
 											</svg>
-										</a>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -869,6 +869,34 @@
 				info.innerHTML = "Innov-Events est une entreprise d'évenementiel qui comporte des agence dans toutes la France. J'ai du créer un site vitrine pour présenter les prestations et augmeneter leur visibiliter sur internet.";
 				infoB.innerHTML = "Wordpres | php | HTML&CSS ";
 				lien.href = "https://innov-events.fr"
+
+			}
+			if (arg == "1") {
+				titre.innerHTML = "Refonte du site Agence Influenceur";
+				info.innerHTML = "Agence influenceur est une agence de communication spécialiser dans l'aide et l'acompagnement des influenceurs. <br> Les nouvelle fonctionnaliter pertmet de vous mettre en relation avec des influencuers et des marque pour faire leur promotion. ";
+				infoB.innerHTML = "Wordpres | php | HTML&CSS | SQL ";
+				lien.href = "https://agence-influenceur.fr/"
+
+			}
+			if (arg == "2") {
+				titre.innerHTML = "Création du site Niméa";
+				info.innerHTML = "Niméa est un site vitrine qui présente les prestations de l'entreprise de decorateur d'extérieur.";
+				infoB.innerHTML = "Wordpres | php | HTML&CSS | SQL ";
+				lien.href = "https://nimea-jardins.fr/accueil/"
+
+			}
+			if (arg == "3") {
+				titre.innerHTML = "Création du site Fhims";
+				info.innerHTML = "Fhims est un site vitrine qui présente les prestations de l'entreprise de de porte de garage / entrée.";
+				infoB.innerHTML = "Wordpres | php | HTML&CSS | SQL ";
+				lien.href = "https://fihms68.fr/"
+
+			}
+			if (arg == "4") {
+				titre.innerHTML = "Création du site Mon stand ephemere ";
+				info.innerHTML = "Mon stand ephemere est un site de mise en relation entre centre commercial et commercant pour palier a la crise du covid en créeant des stand ephemere dans le centre que vous avez choisi.";
+				infoB.innerHTML = "Wordpres | php | HTML&CSS | SQL ";
+				lien.href = "https://fihms68.fr/"
 
 			}
 		}
