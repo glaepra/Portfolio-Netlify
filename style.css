@@ -18,322 +18,370 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 p {
-  margin: 0;
+    margin: 0;
 }
+
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-  outline: none;
+    outline: none;
 }
+
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: black;
-  color: white;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
 }
+
 .header {
-  height: 100vh;
-  width: 70px;
-  border-right: 1px solid white;
-  position: fixed;
-  left: 0;
-  top: 0;
+    height: 100vh;
+    width: 70px;
+    border-right: 1px solid white;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
+
 .header_button {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
 }
-.header_button > svg {
-  fill: #fff;
-  transition: 1s;
+
+.header_button>svg {
+    fill: #fff;
+    transition: 1s;
 }
-.header_button:hover > svg {
-  fill: #fd8f00;
+
+.header_button:hover>svg {
+    fill: #fd8f00;
 }
+
 .colorColor {
-  color: #fd8f00;
+    color: #fd8f00;
 }
+
 .colorGris {
-  color: #cacaca;
+    color: #cacaca;
 }
+
 .button {
-  background-color: white;
-  color: black;
-  padding: 15px 30px;
-  border-radius: 15px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .lhp {
-  line-height: 1.5em;
+    line-height: 1.5em;
 }
+
 .titre {
-  position: relative;
-  z-index: 2;
-  font-size: 20px;
-  font-weight: 800;
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 800;
 }
-.titre > h2 {
-  position: relative;
-  z-index: 2;
+
+.titre>h2 {
+    position: relative;
+    z-index: 2;
 }
-.titre > div {
-  z-index: 1;
-  position: absolute;
-  border-radius: 100%;
-  height: 50px;
-  width: 50px;
-  background-color: #fd8f00;
-  opacity: 0.5;
-  transform: translate(-50%, -50%);
-  left: 0;
-  top: 50%;
-  animation: float 3s linear infinite alternate;
+
+.titre>div {
+    z-index: 1;
+    position: absolute;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    background-color: #fd8f00;
+    opacity: 0.5;
+    transform: translate(-50%, -50%);
+    left: 0;
+    top: 50%;
+    animation: float 3s linear infinite alternate;
 }
+
 @keyframes float {
-  0% {
-    transform: translate(-50%, -55%);
-  }
-  100% {
-    transform: translate(-50%, -45%);
-  }
+    0% {
+        transform: translate(-50%, -55%);
+    }
+    100% {
+        transform: translate(-50%, -45%);
+    }
 }
+
 .parentPhoto {
-  width: 280px;
-  height: 280px;
-  position: relative;
-  border-radius: 100%;
-  border: 3px solid #fd8f00;
-  overflow: hidden;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    border-radius: 100%;
+    border: 3px solid #fd8f00;
+    overflow: hidden;
 }
+
 .heightBoxMoi {
-  height: 300px;
+    height: 300px;
 }
+
 .BoxHoverMoi {
-  z-index: 1;
-  height: 120px;
-  width: 120px;
-  border-radius: 100%;
-  background-color: #fd8f00;
-  top: -25px;
-  left: -25px;
-  transition: 1s;
+    z-index: 1;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    background-color: #fd8f00;
+    top: -25px;
+    left: -25px;
+    transition: 1s;
 }
+
 .svgMoi {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  top: 17px;
-  left: 20px;
-  z-index: 3;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 17px;
+    left: 20px;
+    z-index: 3;
 }
+
 .heightBoxMoi:hover .BoxHoverMoi {
-  transform: scale(10);
+    transform: scale(10);
 }
+
 .heightBoxMoi:hover .pConp {
-  color: white;
+    color: white;
 }
+
 .pConp {
-  transition: 1s;
+    transition: 1s;
 }
+
 .boxExperiense {
-  background-color: #141414;
-  border-radius: 15px;
-  padding: 30px;
-  display: flex;
+    background-color: #141414;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
 }
+
 .infoExp {
-  width: max-content;
-  background-color: #fd8f00;
-  padding: 10px 50px;
-  border-radius: 30px;
+    width: max-content;
+    background-color: #fd8f00;
+    padding: 10px 50px;
+    border-radius: 30px;
 }
+
 .barprogretion {
-  width: 80%;
-  background-color: #141414;
-  height: 10px;
+    width: 80%;
+    background-color: #141414;
+    height: 10px;
 }
+
 .boxPorfolio {
-  position: relative;
-  width: 500px;
-  height: 250px;
-  overflow: hidden;
-  border-radius: 15px;
+    position: relative;
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
 }
+
 .boxTitrePortfolio {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 0px 0px 30px 0px;
-  background-color: #fd8f00;
-  padding: 10px 30px;
-  box-shadow: rgba(253, 143, 0, 0.5) 0px 7px 29px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0px 0px 30px 0px;
+    background-color: #fd8f00;
+    padding: 10px 30px;
+    box-shadow: rgba(253, 143, 0, 0.5) 0px 7px 29px 0px;
 }
+
 .boxPlusPortfolio {
-  position: absolute;
-  height: 70px;
-  width: 70px;
-  bottom: -15px;
-  right: -15px;
-  border-radius: 100%;
-  background-color: #fd8f00;
-  transition: 0.7s;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    bottom: -15px;
+    right: -15px;
+    border-radius: 100%;
+    background-color: #fd8f00;
+    transition: 0.7s;
 }
-.boxPlusPortfolio > svg {
-  margin-top: 10px;
-  margin-left: 10px;
+
+.boxPlusPortfolio>svg {
+    margin-top: 10px;
+    margin-left: 10px;
 }
+
 .boxPlusPortfolio:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
+
 .textInput {
-  margin: 0px 15px;
-  border: none;
-  color: white;
-  background: transparent;
-  padding: 10px;
-  border-bottom: 1px solid #fd8f00;
-  font-size: 25px;
-  font-weight: 700;
+    margin: 0px 15px;
+    border: none;
+    color: white;
+    background: transparent;
+    padding: 10px;
+    border-bottom: 1px solid #fd8f00;
+    font-size: 25px;
+    font-weight: 700;
 }
+
 .cercle_back_moi {
-  bottom: -150px;
-  right: -150px;
-  height: 1000px;
-  width: 1000px;
-  border-radius: 100%;
-  background-color: #141414;
-  z-index: 1;
+    bottom: -150px;
+    right: -150px;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    background-color: #141414;
+    z-index: 1;
 }
+
 .moiAccuiel {
-  z-index: 2;
-  right: 0;
-  bottom: 0;
-  width: 850px;
-}
-.borderExperience {
-  background: #fff;
-  width: 1px;
-}
-.nowrapRight {
-  white-space: nowrap;
-}
-@media (max-width: 1780px) {
-  .cercle_back_moi {
-    height: 800px;
-    width: 800px;
-  }
-  .moiAccuiel {
-    width: 650px;
-  }
-}
-
-.animationSVG {
-  position: fixed;
-  height: 100vh;
-  z-index: -1;
-  transform: scale(0);
-  transition: 2s;
-}
-.activeanimationSVG {
-  z-index: 30;
-  transform: scale(1.5);
-}
-.informationAnimationSVG {
-  position: fixed;
-  height: 100vh;
-  z-index: -1;
-  opacity: 0;
-  background: #fd8f00;
-  transition-delay: 2s;
-}
-.activeinformationAnimationSVG {
-  opacity: 1;
-  z-index: 30;
-}
-.animationActiveInformation {
-  transform: translateY(-10px);
-  transition: 1s;
-  opacity: 0;
-}
-.activeinformationAnimationSVG .animationActiveInformation {
-  transform: translateY(0px);
-  opacity: 1;
-}
-.activeinformationAnimationSVGFin {
-  transform: translateY(-10px) !important;
-  opacity: 0 !important;
-}
-
-.splide__arrow {
-  top: 120% !important;
-  fill: #fd8f00;
-  background: transparent !important;
-}
-.splide__arrow--prev {
-  left: 80% !important;
-}
-.splide__arrow--next {
-  right: 5% !important;
-}
-.splide__pagination {
-  display: none !important;
-}
-
-.splide__arrow svg {
-  fill: #fd8f00 !important;
-}
-
-@media (max-width: 767px) {
-  .splide__arrow--prev {
-    left: 60% !important;
-  }
-  .splide__arrow {
-    top: 120% !important;
-  }
-  .cercle_back_moi {
-    bottom: -50px;
-    right: -50px;
-    height: 400px;
-    width: 400px;
-  }
-  .moiAccuiel {
     z-index: 2;
     right: 0;
     bottom: 0;
-    width: 350px;
-  }
-  .borderExperience {
+    width: 850px;
+}
+
+.borderExperience {
     background: #fff;
-    height: 1px;
-    width: 100%;
-    margin: 30px 0px;
-  }
-  .nowrapRight {
-    white-space: initial;
-  }
-  .textInput {
-    font-size: 16px;
-    border-radius: 0px;
-    width: 90% !important;
-    margin: 0px 0px;
-  }
-  .boxPorfolio {
-    width: 300px;
-    height: 150px;
-  }
+    width: 1px;
+}
+
+.nowrapRight {
+    white-space: nowrap;
+}
+
+@media (max-width: 1780px) {
+    .cercle_back_moi {
+        height: 800px;
+        width: 800px;
+    }
+    .moiAccuiel {
+        width: 650px;
+    }
+}
+
+.animationSVG {
+    position: fixed;
+    height: 100vh;
+    z-index: -1;
+    transform: scale(0);
+    transition: 2s;
+}
+
+.activeanimationSVG {
+    z-index: 30;
+    transform: scale(1.5);
+}
+
+.informationAnimationSVG {
+    position: fixed;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0;
+    background: #fd8f00;
+    transition-delay: 2s;
+}
+
+.activeinformationAnimationSVG {
+    opacity: 1;
+    z-index: 30;
+}
+
+.animationActiveInformation {
+    transform: translateY(-10px);
+    transition: 1s;
+    opacity: 0;
+    display: none;
+}
+
+.activeinformationAnimationSVG .animationActiveInformation {
+    transform: translateY(0px);
+    opacity: 1;
+    display: block;
+}
+
+.activeinformationAnimationSVGFin {
+    transform: translateY(-10px) !important;
+    opacity: 0 !important;
+}
+
+.splide__arrow {
+    top: 120% !important;
+    fill: #fd8f00;
+    background: transparent !important;
+}
+
+.splide__arrow--prev {
+    left: 80% !important;
+}
+
+.splide__arrow--next {
+    right: 5% !important;
+}
+
+.splide__pagination {
+    display: none !important;
+}
+
+.splide__arrow svg {
+    fill: #fd8f00 !important;
+}
+
+@media (max-width: 767px) {
+    .splide__arrow--prev {
+        left: 60% !important;
+    }
+    .splide__arrow {
+        top: 120% !important;
+    }
+    .cercle_back_moi {
+        bottom: -50px;
+        right: -50px;
+        height: 400px;
+        width: 400px;
+    }
+    .moiAccuiel {
+        z-index: 2;
+        right: 0;
+        bottom: 0;
+        width: 350px;
+    }
+    .borderExperience {
+        background: #fff;
+        height: 1px;
+        width: 100%;
+        margin: 30px 0px;
+    }
+    .nowrapRight {
+        white-space: initial;
+    }
+    .textInput {
+        font-size: 16px;
+        border-radius: 0px;
+        width: 90% !important;
+        margin: 0px 0px;
+    }
+    .boxPorfolio {
+        width: 300px;
+        height: 150px;
+    }
 }
