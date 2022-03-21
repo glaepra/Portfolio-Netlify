@@ -2,73 +2,73 @@
 	Pour mieux comprendre ce script, voir : https://css-tricks.com/serviceworker-for-offline/
 *******************/
 
-var version = 'v1:1:4';
+var version = 'v1:1:5';
 
 self.addEventListener("install", function(event) {
-	self.skipWaiting();
-	event.waitUntil(
-	caches.open(version + 'fundamentals')
-      .then(function(cache) {
-        return cache.addAll([
-          '/',
-          'https://victordorand.com/index.html',
-          'https://victordorand.com/manifest.json',
-          'https://victordorand.com/style.css',
-          'https://victordorand.com/responsive.css'
-        ]);
-      })
-	);
+    self.skipWaiting();
+    event.waitUntil(
+        caches.open(version + 'fundamentals')
+        .then(function(cache) {
+            return cache.addAll([
+                '/',
+                'https://victordorand.com/index.html',
+                'https://victordorand.com/manifest.json',
+                'https://victordorand.com/style.css',
+                'https://victordorand.com/responsive.css'
+            ]);
+        })
+    );
 });
 
 self.addEventListener("fetch", function(event) {
-  if (event.request.url.indexOf('http') === 0 && event.request.method == 'GET') {
-	  event.respondWith(
-		caches
-		  .match(event.request)
-		  .then(function(cached) {
-			var networked = fetch(event.request)
-			  .then(fetchedFromNetwork, unableToResolve)
-			  .catch(unableToResolve);
-			return cached || networked;
+    if (event.request.url.indexOf('http') === 0 && event.request.method == 'GET') {
+        event.respondWith(
+            caches
+            .match(event.request)
+            .then(function(cached) {
+                var networked = fetch(event.request)
+                    .then(fetchedFromNetwork, unableToResolve)
+                    .catch(unableToResolve);
+                return cached || networked;
 
-			function fetchedFromNetwork(response) {
-			  var cacheCopy = response.clone();
-			  caches.open(version + 'pages')
-					.then(function add(cache) {
-						cache.put(event.request, cacheCopy);
-					});
-			  return response;
-			}
+                function fetchedFromNetwork(response) {
+                    var cacheCopy = response.clone();
+                    caches.open(version + 'pages')
+                        .then(function add(cache) {
+                            cache.put(event.request, cacheCopy);
+                        });
+                    return response;
+                }
 
-			function unableToResolve () {
-			 
-			  return new Response("<h1>Cette ressource n'est pas disponible hors ligne</h1>", {
-				status: 503,
-				statusText: 'Service Unavailable',
-				headers: new Headers({
-				  'Content-Type': 'text/html'
-				})
-			  });
-			}
-		  })
-	  );
-  }
+                function unableToResolve() {
+
+                    return new Response("<h1>Cette ressource n'est pas disponible hors ligne</h1>", {
+                        status: 503,
+                        statusText: 'Service Unavailable',
+                        headers: new Headers({
+                            'Content-Type': 'text/html'
+                        })
+                    });
+                }
+            })
+        );
+    }
 });
 
 self.addEventListener("activate", function(event) {
-  event.waitUntil(
-    caches
-      .keys()
-      .then(function (keys) {
-        return Promise.all(
-          keys
-            .filter(function (key) {
-              return !key.startsWith(version);
-            })
-            .map(function (key) {
-              return caches.delete(key);
-            })
-        );
-      })
-  );
+    event.waitUntil(
+        caches
+        .keys()
+        .then(function(keys) {
+            return Promise.all(
+                keys
+                .filter(function(key) {
+                    return !key.startsWith(version);
+                })
+                .map(function(key) {
+                    return caches.delete(key);
+                })
+            );
+        })
+    );
 });
