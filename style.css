@@ -69,11 +69,11 @@ body {
 }
 
 .header_button:hover>svg {
-    fill: #E4685B;
+    fill: #5B7DB1;
 }
 
 .colorColor {
-    color: #E4685B;
+    color: #5B7DB1;
 }
 
 .colorGris {
@@ -112,7 +112,7 @@ body {
     border-radius: 100%;
     height: 50px;
     width: 50px;
-    background-color: #E4685B;
+    background-color: #5B7DB1;
     opacity: 0.5;
     transform: translate(-50%, -50%);
     left: 0;
@@ -134,7 +134,7 @@ body {
     height: 280px;
     position: relative;
     border-radius: 100%;
-    border: 3px solid #E4685B;
+    border: 3px solid #5B7DB1;
     overflow: hidden;
 }
 
@@ -147,7 +147,7 @@ body {
     height: 120px;
     width: 120px;
     border-radius: 100%;
-    background-color: #E4685B;
+    background-color: #5B7DB1;
     top: -25px;
     left: -25px;
     transition: 1s;
@@ -183,7 +183,7 @@ body {
 
 .infoExp {
     width: max-content;
-    background-color: #E4685B;
+    background-color: #5B7DB1;
     padding: 10px 50px;
     border-radius: 30px;
 }
@@ -207,7 +207,7 @@ body {
     top: 0;
     left: 0;
     border-radius: 0px 0px 30px 0px;
-    background-color: #E4685B;
+    background-color: #5B7DB1;
     padding: 10px 30px;
     box-shadow: rgba(253, 143, 0, 0.5) 0px 7px 29px 0px;
 }
@@ -219,7 +219,7 @@ body {
     bottom: -15px;
     right: -15px;
     border-radius: 100%;
-    background-color: #E4685B;
+    background-color: #5B7DB1;
     transition: 0.7s;
 }
 
@@ -238,7 +238,7 @@ body {
     color: white;
     background: transparent;
     padding: 10px;
-    border-bottom: 1px solid #E4685B;
+    border-bottom: 1px solid #5B7DB1;
     font-size: 25px;
     font-weight: 700;
 }
@@ -297,7 +297,7 @@ body {
     height: 100vh;
     z-index: -1;
     opacity: 0;
-    background: #E4685B;
+    background: #5B7DB1;
     transition-delay: 2s;
 }
 
@@ -326,7 +326,7 @@ body {
 
 .splide__arrow {
     top: 120% !important;
-    fill: #E4685B;
+    fill: #5B7DB1;
     background: transparent !important;
 }
 
@@ -343,7 +343,7 @@ body {
 }
 
 .splide__arrow svg {
-    fill: #E4685B !important;
+    fill: #5B7DB1 !important;
 }
 
 @media (max-width: 767px) {
