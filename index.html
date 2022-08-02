@@ -26,10 +26,12 @@
 
   <!-- or the reference on CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
   <script async src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-  <script async src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!--google index-->
   <meta name="google-site-verification" content="_OquYH9ZZtgH1VHTsNgpkV8PHOxbglqkEOHaJMp9GGk">
@@ -734,7 +736,7 @@
       }
       this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>"; var that = this; var delta = 200 - Math.random() * 100; if (this.isDeleting) { delta /= 2; } if (!this.isDeleting && this.txt === fullTxt) {
         delta =
-        this.period; this.isDeleting = true;
+          this.period; this.isDeleting = true;
       } else if (this.isDeleting && this.txt === "") { this.isDeleting = false; this.loopNum++; delta = 500; } setTimeout(function () { that.tick(); }, delta);
     }; window.onload = function () {
       var elements = document.getElementsByClassName("typewrite"); for (var i = 0; i
