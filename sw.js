@@ -2,7 +2,7 @@
 	Pour mieux comprendre ce script, voir : https://css-tricks.com/serviceworker-for-offline/
 *******************/
 
-var version = 'v1:1:6';
+var version = 'v2.1';
 
 self.addEventListener("install", function(event) {
     self.skipWaiting();
